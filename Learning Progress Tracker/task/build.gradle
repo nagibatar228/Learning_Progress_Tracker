@@ -1,0 +1,14 @@
+repositories {
+    mavenCentral()
+    google()
+}
+
+dependencies {
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testRuntimeOnly 'org.junit.vintage:junit-vintage-engine:5.8.2'
+    implementation("com.google.guava:guava:31.1-jre")
+}
+
+test {
+    useJUnitPlatform()
+}
